@@ -6,10 +6,20 @@ function removeDuplicate(values){
         if(duplicates.indexOf(element) == -1){
             duplicates.push(element);
         }else{
-            console.log(element); // This line is just to watch duplicates.
+            console.log("Duplicates are = ",element); // This line is just to watch duplicates.
         }
     }
     return duplicates;
+
+    /*
+        (Using for each)
+        for(const element of values){
+            if(duplicates.indexOf(element) == -1){
+                duplicates.push(element)
+            }
+        }
+        return duplicates;
+    */    
 }
 
 let duplicateLess = removeDuplicate(numbers)
